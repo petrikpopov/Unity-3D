@@ -9,12 +9,11 @@ public class GameState
     public static float lookSensitivityY { get; set; } = -0.025f;
     public static float fpvRange { get; set; } = 1f;
 
-    public static int room { get; set; } = 1; // level
+    public static int room { get; set; } = 1; 
     public static Dictionary<String, object> collectedItems { get; private set; } = new();
 
-    // ƒобавлены минимальный и максимальный угол наклона камеры
-    public static float cameraMinTilt { get; set; } = -30f; // ћинимальный угол (по умолчанию -30 градусов)
-    public static float cameraMaxTilt { get; set; } = 60f;  // ћаксимальный угол (по умолчанию 60 градусов)
+    public static float cameraMinTilt { get; set; } = -30f; 
+    public static float cameraMaxTilt { get; set; } = 60f;  
 
     #region effectsVolume
     private static float _effectsVolume = 1f;
